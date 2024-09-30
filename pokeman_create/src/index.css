@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #eff3ff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 5.4rem;
+  color: #000 !important;
+  text-align: center;
+}
+
+p,
+span {
+  font-size: 1.6rem;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 120rem; /* Adjusted for better responsiveness */
+  margin: auto;
+  padding: 0 2rem; /* Added padding for better spacing */
+}
+
+header {
+  margin: 3.2rem 0;
+}
+
+.pokemon-search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 2rem; /* Adjusted gap for better spacing */
+}
+
+.pokemon-card {
+  background-color: #fff;
+  border-radius: 0.2rem;
+  padding: 1.6rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
+  position: relative;
+  overflow: hidden; /* Added to prevent overflow */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the image */
+  height: 200px; /* Fixed height for the figure */
+  margin: 0; /* Remove default margin */
+  overflow: hidden; /* Ensure that overflowing content is hidden */
+}
+
+.pokemon-image {
+  width: 100%; /* Full width of the figure */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100%; /* Ensure the image doesn't exceed the figure height */
+  object-fit: contain; /* Fit the image inside without cropping */
+  border-radius: 0.2rem; /* Optional: rounded corners */
+}
+
+.pokemon-name {
+  font-size: 2.5rem; /* Adjusted for better fit */
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 1.6rem; /* Adjusted margin */
+}
+
+.pokemon-highlight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.6rem 0;
+}
+
+
+.pokemon-highlight p {
+  padding: 0.6rem 1.2rem; /* Adjusted padding */
+  background-color: #2ecc71;
+  border-radius: 20rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.pokemon-info {
+  text-align: center;
+}
+
+.short-container {
+  max-width: 65rem;
+  margin: auto;
+}
+
+.short-container h1 {
+  margin-bottom: 3.2rem;
+}
+
+.short-container p {
+  margin-bottom: 1.6rem;
+}
+
+.short-container button {
+  padding: 0.6rem 1.2rem; /* Adjusted padding */
+  cursor: pointer;
+}
