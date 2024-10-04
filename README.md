@@ -14,6 +14,6 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository
 2. Navigate to the project directory
 3. Install Dependencies
-   bun install
+   (bun install)
 4.Running the project
-   bun run dev
+  (bun run dev)
